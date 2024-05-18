@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.div-center{
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.first-div{
+    left: 400px;
+    top:50px;
+    width: 150px;
+    height: 150px; 
+    border: 1px solid #d00c0c ;
+    background: #d00c0c;
+    border-radius: 100%;
+    box-shadow: 12px 10px 15px 4px #ed4343, -12px 0 8px -4px #ec4d4d;
+    animation: bounce 8s ease-in infinite; 
+}
+
+.second-div{
+   bottom: 50px;
+    right: 400px;
+   width: 200px;
+   height: 200px; 
+   border: 2px solid rgb(62, 62, 170) ;
+   border-radius: 100%;
+   background:rgb(62, 62, 170) ;
+   box-shadow: 12px 10px 15px 4px rgb(136, 136, 238), -12px 0 8px -4px rgb(139, 139, 242) ;
+   animation: bounce 5s ease infinite;
+}
+.image{
+    width: 50%;
+}
+.btn{
+    width: 100%;
+    
+}
+#cards{
+  display: none; 
+  position: absolute; 
+  top: 38%;
+  left: 35%;
+  width: 30%; 
+}
+
+
+#removeModal{
+    cursor: pointer;
+}
+
+
+i{
+    color: rgb(107, 233, 122);
+}
+.notification{
+    right: -500px;
+    bottom: 100px;
+    width: 30rem;
+    transition: 1s ease-in-out;
+}
+
+
+
+.notification-active{
+    right: 0;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(30px);
+    }
+    60% {
+        transform: translateY(15px);
+    }
+}
+
+
+@media(max-width:600px){
+    #wrapper{
+        padding: auto;
+        overflow: hidden;
+    }
+
+    .first-div{
+        left: 10%;
+        top: 5%;
+        width: 120px;
+        height: 120px;
+    }
+    .second-div{
+
+        left: 70%;
+        bottom: 10%;
+        width: 100px;
+        height: 100px;
+
+    }
+    body{
+        overflow: hidden;
+    }
+    .notification{
+     
+        width: 25rem;
+    }
+}
+
+
+@media(max-width:380px){
+    #wrapper{
+        padding: auto;
+        overflow: hidden;
+    }
+
+    .first-div{
+        left: 10%;
+        top: 5%;
+        width: 120px;
+        height: 120px;
+    }
+    .second-div{
+
+        left: 70%;
+        bottom: 10%;
+        width: 100px;
+        height: 100px;
+
+    }
+    body{
+        overflow: hidden;
+    }
+    .notification{
+     
+        width: 20rem;
+    }
+        
+}
+
+
+
+
+
+
+    
+
+
