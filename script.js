@@ -46,4 +46,3 @@ const notificationRing = () =>{
 removeModal.addEventListener("click",remove)
 sharebtn.addEventListener("click",shareprofile)
 
-
